@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aiman’s Journal</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <!-- <nav>
+
+    <div id="logo">
+      <img src="./images/Adobe Express - file (10).png" alt="logo">
+    </div>
+
+    <ul class="links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#" class="selected">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="menu">
+      <i class="fa-solid fa-bars" id="menu_icon" onclick="toggleMenu()" title="open menu"></i>
+    </div>
+
+  </nav> -->
+
+
+  <main>
+
+    <section class="head_section">
+
+      <div class="head">
+        <h1>Aiman’s Journal</h1>
+        <p>Welcome to my corner of the internet where I drop stories, ideas, and bits of life that make me smile.</p>
+      </div>
+
+    </section>
+
+    <section class="search_section">
+
+      <input type="text" id="search" placeholder="Search here ...." onkeyup="searchBlog()">
+      <div class="category">
+        <button class="all btn">All</button>
+        <button class="tech_btn btn">Tech</button>
+        <button class="video_btn btn">Video Games</button>
+        <button class="art_btn btn">Art</button>
+      </div>
+
+    </section>
+
+    <section class="blogs_section">
+
+      <div class="game filterdiv">
+        <div>
+          <img src="./images/game/game2.jpeg" alt="game image">
+        </div>
+        <h3>Surviving the Battlegrounds: My PUBG Adventures</h3>
+        <p class="description">From intense chicken dinners to epic fails, here’s my journey through PUBG’s wild
+          battlegrounds and a few tips for fellow players.</p>
+        <p class="date">October 15, 2025</p>
+      </div>
+
+      <div class="tech filterdiv">
+        <div>
+          <img src="./images/tech/tech2.jpeg" alt="tech image">
+        </div>
+        <h3>How I Accidentally Broke a Website</h3>
+        <p class="description">A cautionary tale about coding mistakes, panic, and the art of fixing your own chaos.</p>
+        <p class="date">September 12, 2025</p>
+      </div>
+
+
+      <div class="art filterdiv">
+        <div>
+          <img src="./images/art/art2.jpeg" alt="art image">
+        </div>
+        <h3>Sketching Calm: How Drawing Helps Me Unwind</h3>
+        <p class="description">A little story about how I turn quiet moments into sketches, my favorite way to relax
+          after a long day.</p>
+        <p class="date">September 30, 2025</p>
+      </div>
+
+      <div class="tech filterdiv">
+        <div>
+          <img src="./images/tech/tech3.jpeg" alt="tech image">
+        </div>
+        <h3>Debugging Nightmares: Tales from My Laptop
+        </h3>
+        <p class="description">The strange and hilarious bugs that turned my simple projects into epic adventures.</p>
+        <p class="date">September 20, 2025</p>
+      </div>
+
+      <div class="art filterdiv">
+        <div>
+          <img src="./images/art/art3.jpeg" alt="art image">
+        </div>
+        <h3>My Desk My Mess Inside My Art Space</h3>
+        <p class="description">A peek into the creative chaos of my art desk where ideas turn into doodles and doodles
+          sometimes turn into art.</p>
+        <p class="date">August 28, 2025</p>
+      </div>
+
+      <div class="game filterdiv">
+        <div>
+          <img src="./images/game/game3.jpeg" alt="game image">
+        </div>
+        <h3>Why Indie Games Hit Differently</h3>
+        <p class="description">Big stories, tiny teams — here’s why I think indie games have more heart than most AAA
+          titles.</p>
+        <p class="date">September 20, 2025</p>
+      </div>
+
+      <div class="game filterdiv">
+        <div>
+          <img src="./images/game/game4.jpeg" alt="game image">
+        </div>
+        <h3>When You Realize You’re the Last One Alive in the Squad</h3>
+        <p class="description">That heart-pounding moment when your whole team’s down and it’s just you — panic,
+          strategy, and a tiny bit of hope for that clutch win.</p>
+        <p class="date">October 12, 2025</p>
+      </div>
+
+      <div class="tech filterdiv">
+        <div>
+          <img src="./images/tech/tech1.jpeg" alt="tech image">
+        </div>
+        <h3>5 Simple JavaScript Tricks You’ll Love</h3>
+        <p class="description">Quick and easy JS tips that make coding smoother, perfect for beginners and curious
+          coders alike.</p>
+        <p class="date">October 25, 2025</p>
+      </div>
+
+      <div class="art filterdiv">
+        <div>
+          <img src="./images/art/art1.jpeg" alt="art image">
+        </div>
+        <h3>The Magic of Watercolors</h3>
+        <p class="description">Soft colors flowing brushstrokes and a cup of tea made me rediscover the joy of painting
+          on weekends.</p>
+        <p class="date">September 15, 2025</p>
+      </div>
+
+      <div class="game filterdiv">
+        <div>
+          <img src="./images/game/game1.jpeg" alt="game image">
+        </div>
+        <h3>My Go-To Games When I Need a Break</h3>
+        <p class="description">A short list of chill, cozy games I play when I just want to relax and reset.</p>
+        <p class="date">September 10, 2025</p>
+      </div>
+
+    </section>
+
+    <div class="load_btn">
+      <button>Load more</button>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer">
+      <p class="para1">Thanks for stopping by! Come back soon for more stories, laughs, and little sparks of chaos that
+        make life fun</p>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/aimanafzal-frontend/"><i class="fa-brands fa-linkedin-in"></i></a>
+         <a href="https://github.com/Aiman-7"> <i class="fa-brands fa-github"></i></a>
+        </div>
+      <p class="para2">© 2025 Aiman’s Journal</p>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
